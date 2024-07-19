@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Gallery</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="parent">
+        <img src="img1.jpg" alt="Gallery Image 1" class="galleryImage" onclick="openModal(this)">
+        <img src="img2.jpg" alt="Gallery Image 2" class="galleryImage" onclick="openModal(this)">
+        <img src="img3.jpg" alt="Gallery Image 3" class="galleryImage" onclick="openModal(this)">
+        <img src="img4.jpg" alt="Gallery Image 4" class="galleryImage" onclick="openModal(this)">
+        <img src="img5.jpg" alt="Gallery Image 5" class="galleryImage" onclick="openModal(this)">
+        <img src="img6.jpg" alt="Gallery Image 6" class="galleryImage" onclick="openModal(this)">
+        <img src="img7.jpg" alt="Gallery Image 7" class="galleryImage" onclick="openModal(this)">
+        <img src="img8.jpg" alt="Gallery Image 8" class="galleryImage" onclick="openModal(this)">
+    </div>
+
+    <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <button class="arrow left-arrow" id="prevModalBtn">&#9664;</button>
+        <img class="modal-content" id="fullImage">
+        <button class="arrow right-arrow" id="nextModalBtn">&#9654;</button>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
